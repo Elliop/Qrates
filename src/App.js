@@ -1,26 +1,46 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core";
+import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import Layout from "./components/Layout";
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#F7F7FF",
+    },
+    secondary: {
+      main: "#577399",
+    },
+  },
+  typography: {
+    fontFamily: `"Sen" , sans-serif`,
+    fontWeightLight: 400,
+    fontWeightMedium: 700,
+    fontWeightBold: 800,
+  },
+});
 
 function App() {
   return (
-    <Router>
-      <Layout>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/register">
-            <Register />
-          </Route>
-        </Switch>
-      </Layout>
-    </Router>
+    <ThemeProvider theme={theme}>
+      <Router>
+        <Layout>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/register">
+              <Register />
+            </Route>
+          </Switch>
+        </Layout>
+      </Router>
+    </ThemeProvider>
   );
 }
 
