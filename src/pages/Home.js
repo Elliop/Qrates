@@ -1,5 +1,11 @@
+import WhyCard from "../components/WhyCard";
+
 const Home = () => {
-  return <h1>Home</h1>;
+  return (
+    <div>
+      <WhyCard />
+    </div>
+  );
 };
 
 export default Home;
