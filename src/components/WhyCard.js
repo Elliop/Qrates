@@ -7,8 +7,7 @@ const useStyles = makeStyles((theme) => {
       fontWeight: "bold",
     },
     card: {
-      width: "50%",
-      padding: "10em 3em",
+      padding: "15em 0 0 3em",
     },
     button: {
       margin: "1em 0",
