@@ -7,6 +7,10 @@ import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => {
   return {
+    items: {
+      flexGrow: "1",
+      marginLeft: "28%",
+    },
     root: {
       display: "flex",
     },
@@ -14,19 +18,12 @@ const useStyles = makeStyles((theme) => {
       backgroundColor: "white",
     },
     logo: {
-      flexGrow: "1",
       fontWeight: "bold",
-      fontSize: "32px",
-      letterSpacing: "0.05em",
+      fontSize: "25px",
       cursor: "pointer",
-      textDecoration: "none",
-    },
-    L: {
       padding: "6px",
-      margin: "0 3px 0 0",
-      backgroundColor: "#003459",
-      color: "white",
-      borderRadius: "10px",
+      backgroundColor: "#000",
+      borderRadius: "15px",
     },
     buttom: {
       margin: "0 1%",
@@ -53,12 +50,17 @@ export default function Layout({ children }) {
             onClick={() => history.push("/")}
             className={classes.logo}
           >
-            <spam className={classes.L}>L</spam>
-            ogo
+            Q
           </Typography>
+          <div className={classes.items}>
+            <Button className={classes.buttom}>DISCOVER</Button>
+            <Button className={classes.buttom}>SEARCH</Button>
+            <Button className={classes.buttom}>WHY QRATES</Button>
+            <Button className={classes.buttom}>CART</Button>
+          </div>
           <Button
             onClick={() => history.push("/register")}
-            color="secondary"
+            color="primary"
             variant="outlined"
           >
             Register
@@ -66,7 +68,7 @@ export default function Layout({ children }) {
           <Button
             onClick={() => history.push("/login")}
             className={classes.buttom}
-            color="secondary"
+            color="primary"
             variant="contained"
           >
             Login

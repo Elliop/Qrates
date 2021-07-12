@@ -8,10 +8,10 @@ import Register from "./pages/Register";
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: "#F7F7FF",
+      main: "#000000",
     },
     secondary: {
-      main: "#577399",
+      main: "#ffffff",
     },
   },
   typography: {
