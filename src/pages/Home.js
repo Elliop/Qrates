@@ -4,6 +4,8 @@ import WhyCard from "../components/WhyCard";
 import Man from "../assets/man.png";
 import Artist from "../assets/artist_waves_two.png";
 import Paid from "../assets/paid_to_artists.png";
+import Crowdfunding from "../components/Crowdfunding";
+import PressSell from "../components/PressSell";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -61,6 +63,12 @@ const Home = () => {
               model to suit you.
             </Typography>
           </Card>
+        </Grid>
+        <Grid item xs={6}>
+          <Crowdfunding />
+        </Grid>
+        <Grid item xs={6}>
+          <PressSell />
         </Grid>
       </Grid>
     </div>
