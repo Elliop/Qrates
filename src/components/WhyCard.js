@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => {
       fontWeight: "bold",
     },
     card: {
-      padding: "15em 0 0 3em",
+      padding: "20em 0 0 30px",
     },
     button: {
       margin: "1em 0",
@@ -23,10 +23,10 @@ function WhyCard() {
         <Button color="primary" variant="outlined" className={classes.button}>
           WHY QRATES
         </Button>
-        <Typography variant="h3" className={classes.typo}>
+        <Typography variant="h2" className={classes.typo}>
           Your music on vinyl.
         </Typography>
-        <Typography variant="h3" className={classes.typo}>
+        <Typography variant="h2" className={classes.typo}>
           Without the barriers.
         </Typography>
         <Typography variant="h5" className={classes.button}>
