@@ -4,6 +4,12 @@ import Crowdfunding from "../assets/crowdfunding.png";
 
 const useStyles = makeStyles((theme) => {
   return {
+    ALL: {
+      borderRight: "1px solid #000000",
+      width: "100%",
+      height: "100%",
+      backgroundColor: "#FFF804",
+    },
     typo: {
       fontWeight: "bold",
       margin: "1em 0 15px 0",
@@ -19,7 +25,7 @@ const useStyles = makeStyles((theme) => {
       borderRadius: "25px",
     },
     img: {
-      width: "100%",
+      maxWidth: "83%",
     },
     NO: {
       border: "2px solid #000000",
@@ -32,7 +38,7 @@ const useStyles = makeStyles((theme) => {
 function WhyCard() {
   const classes = useStyles();
   return (
-    <div>
+    <div className={classes.ALL}>
       <Card elevation={0} className={classes.card}>
         <Typography variant="button" className={classes.NO}>
           NO RISK, NO WASTE

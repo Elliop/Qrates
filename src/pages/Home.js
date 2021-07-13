@@ -30,7 +30,9 @@ const useStyles = makeStyles((theme) => {
     },
     mdlCard: {
       width: "100%",
-      border: "2px solid #000000",
+      borderTop: "2px solid #000000",
+      borderBottom: "2px solid #000000",
+      borderRadius: "0px",
     },
     mdlText: {
       padding: "110px 0 97px",
@@ -57,7 +59,7 @@ const Home = () => {
           <img src={Paid} alt="paid to artists" className={classes.paid} />
         </Grid>
         <Grid item xs={12}>
-          <Card className={classes.mdlCard}>
+          <Card elevation={0} className={classes.mdlCard}>
             <Typography variant="h5" className={classes.mdlText}>
               No matter where you’re at in your career, we’ve got a production
               model to suit you.
