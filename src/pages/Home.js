@@ -1,7 +1,7 @@
 import { makeStyles } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import WhyCard from "../components/WhyCard";
-import Image from "../assets/man.png";
+import Man from "../assets/man.png";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -27,7 +27,7 @@ const Home = () => {
           <WhyCard />
         </Grid>
         <Grid item xs={8}>
-          <img src={Image} alt="man" className={classes.man} />
+          <img src={Man} alt="man" className={classes.man} />
         </Grid>
       </Grid>
     </div>
