@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => {
   };
 });
 
-function WhyCard() {
+function Press() {
   const classes = useStyles();
   return (
     <div className={classes.ALL}>
@@ -65,4 +65,4 @@ function WhyCard() {
   );
 }
 
-export default WhyCard;
+export default Press;

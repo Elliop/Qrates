@@ -102,11 +102,13 @@ const Home = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid item xs={6}>
-          <Services />
-        </Grid>
-        <Grid item xs={6}>
-          <Piano />
+        <Grid container>
+          <Grid item xs={6}>
+            <Services />
+          </Grid>
+          <Grid item xs={6}>
+            <Piano />
+          </Grid>
         </Grid>
       </Grid>
     </div>

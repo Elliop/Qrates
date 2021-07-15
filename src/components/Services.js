@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme) => {
     ALL: {
       width: "100%",
       height: "100%",
+      marginTop: "30%",
     },
     typo1: {
       marginTop: "1em",
@@ -54,7 +55,7 @@ const useStyles = makeStyles((theme) => {
   };
 });
 
-function WhyCard() {
+function Services() {
   const classes = useStyles();
   return (
     <div className={classes.ALL}>
@@ -87,4 +88,4 @@ function WhyCard() {
   );
 }
 
-export default WhyCard;
+export default Services;
