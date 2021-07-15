@@ -6,6 +6,8 @@ import Artist from "../assets/artist_waves_two.png";
 import Paid from "../assets/paid_to_artists.png";
 import Crowdfunding from "../components/Crowdfunding";
 import PressSell from "../components/PressSell";
+import Services from "../components/Services";
+import Piano from "../components/Piano";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -99,6 +101,12 @@ const Home = () => {
               START A PRESS ONLY PROJECT
             </Typography>
           </Grid>
+        </Grid>
+        <Grid item xs={6}>
+          <Services />
+        </Grid>
+        <Grid item xs={6}>
+          <Piano />
         </Grid>
       </Grid>
     </div>
