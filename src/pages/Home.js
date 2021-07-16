@@ -11,6 +11,7 @@ import Piano from "../components/Piano";
 import Network from "../components/Network";
 import Support from "../components/Support";
 import Community from "../components/Community";
+import ImgsCard from "../components/ImgsCard";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -136,6 +137,9 @@ const Home = () => {
         </Grid>
         <Grid item xs={12}>
           <Community />
+        </Grid>
+        <Grid item xs={12}>
+          <ImgsCard />
         </Grid>
       </Grid>
     </div>
