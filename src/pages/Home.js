@@ -8,6 +8,8 @@ import Crowdfunding from "../components/Crowdfunding";
 import PressSell from "../components/PressSell";
 import Services from "../components/Services";
 import Piano from "../components/Piano";
+import Network from "../components/Network";
+import Support from "../components/Support";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -116,6 +118,14 @@ const Home = () => {
           </Grid>
           <Grid item xs={6}>
             <Piano />
+          </Grid>
+        </Grid>
+        <Grid container>
+          <Grid item xs={6}>
+            <Network />
+          </Grid>
+          <Grid item xs={6}>
+            <Support />
           </Grid>
         </Grid>
       </Grid>
