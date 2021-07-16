@@ -10,6 +10,7 @@ import Services from "../components/Services";
 import Piano from "../components/Piano";
 import Network from "../components/Network";
 import Support from "../components/Support";
+import Community from "../components/Community";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -60,7 +61,7 @@ const useStyles = makeStyles((theme) => {
     support: {
       borderTop: "2px solid #000000",
       borderBottom: "2px solid #000000",
-      margin: "5em 0",
+      margin: "4em 0",
     },
   };
 });
@@ -132,6 +133,9 @@ const Home = () => {
           <Grid item xs={6}>
             <Support />
           </Grid>
+        </Grid>
+        <Grid item xs={12}>
+          <Community />
         </Grid>
       </Grid>
     </div>
