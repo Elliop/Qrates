@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => {
   };
 });
 
-const Home = () => {
+const ImgsCard = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
@@ -52,4 +52,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ImgsCard;

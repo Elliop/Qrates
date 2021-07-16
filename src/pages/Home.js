@@ -12,6 +12,8 @@ import Network from "../components/Network";
 import Support from "../components/Support";
 import Community from "../components/Community";
 import ImgsCard from "../components/ImgsCard";
+import ListCard from "../components/ListCard";
+import CommentCard from "../components/CommentCard";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -140,6 +142,12 @@ const Home = () => {
         </Grid>
         <Grid item xs={12}>
           <ImgsCard />
+        </Grid>
+        <Grid item xs={12}>
+          <ListCard />
+        </Grid>
+        <Grid item xs={12}>
+          <CommentCard />
         </Grid>
       </Grid>
     </div>
