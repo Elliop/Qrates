@@ -63,17 +63,23 @@ const Home = () => {
   return (
     <div className={classes.root}>
       <Grid container>
-        <Grid item xs={4}>
-          <WhyCard />
-        </Grid>
-        <Grid item xs={8}>
-          <img src={Man} alt="man" className={classes.man} />
-        </Grid>
-        <Grid item xs={8}>
-          <img src={Artist} alt="artist waves two" className={classes.artist} />
-        </Grid>
-        <Grid item xs={4}>
-          <img src={Paid} alt="paid to artists" className={classes.paid} />
+        <Grid container>
+          <Grid item xs={4}>
+            <WhyCard />
+          </Grid>
+          <Grid item xs={8}>
+            <img src={Man} alt="man" className={classes.man} />
+          </Grid>
+          <Grid item xs={8}>
+            <img
+              src={Artist}
+              alt="artist waves two"
+              className={classes.artist}
+            />
+          </Grid>
+          <Grid item xs={4}>
+            <img src={Paid} alt="paid to artists" className={classes.paid} />
+          </Grid>
         </Grid>
         <Grid item xs={12}>
           <Card elevation={0} className={classes.mdlCard}>
@@ -83,11 +89,13 @@ const Home = () => {
             </Typography>
           </Card>
         </Grid>
-        <Grid item xs={6}>
-          <Crowdfunding />
-        </Grid>
-        <Grid item xs={6}>
-          <PressSell />
+        <Grid container>
+          <Grid item xs={6}>
+            <Crowdfunding />
+          </Grid>
+          <Grid item xs={6}>
+            <PressSell />
+          </Grid>
         </Grid>
         <Grid container className={classes.cont}>
           <Grid item xs={8}>
