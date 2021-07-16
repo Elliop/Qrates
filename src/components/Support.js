@@ -1,6 +1,6 @@
-import { Button, Typography, makeStyles, Card } from "@material-ui/core";
+import { Typography, makeStyles, Card } from "@material-ui/core";
 import React from "react";
-import Crowdfunding from "../assets/crowdfunding.png";
+import Sup from "../assets/support.jpeg";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -8,16 +8,20 @@ const useStyles = makeStyles((theme) => {
       borderRight: "1px solid #000000",
       width: "100%",
       height: "100%",
-      backgroundColor: "#FFF804",
+      backgroundColor: "#E280FF",
     },
-    typo: {
+    typo1: {
       fontWeight: "bold",
-      margin: "1em 0 15px 0",
+      margin: "1em 0 0 0",
+    },
+    typo2: {
+      fontWeight: "bold",
+      margin: "0 0 1em 0",
     },
     card: {
       padding: "12% 12% 6% 12%",
       textAlign: "center",
-      backgroundColor: "#FFF804",
+      backgroundColor: "#E280FF",
     },
     button: {
       padding: "1em 5em",
@@ -25,43 +29,40 @@ const useStyles = makeStyles((theme) => {
       borderRadius: "25px",
     },
     img: {
-      maxWidth: "83%",
+      border: "2px solid #000000",
+      width: "100%",
+      margin: "0 0 6em 0",
     },
     NO: {
       border: "2px solid #000000",
-      padding: "1%",
+      padding: "2%",
       backgroundColor: "white",
     },
   };
 });
 
-function Crowd() {
+function Support() {
   const classes = useStyles();
   return (
     <div className={classes.ALL}>
       <Card elevation={0} className={classes.card}>
+        <img src={Sup} alt="Support" className={classes.img} />
         <Typography variant="button" className={classes.NO}>
-          NO RISK, NO WASTE
+          CUSTOMER SUPPORT
         </Typography>
-        <Typography variant="h4" className={classes.typo}>
-          Crowdfunding
+        <Typography variant="h4" className={classes.typo1}>
+          Here to help,
+        </Typography>
+        <Typography variant="h4" className={classes.typo2}>
+          whenever you need it.
         </Typography>
         <Typography variant="h5">
-          Rally your fans and gather pledges. Press the exact number of records
-          you need, without having to pay anything upfront.
+          Whether you’re an artist in the middle of product, or a fan with
+          questions about your order; our team is here to help.
         </Typography>
-        <img src={Crowdfunding} alt="Crowdfunding" className={classes.img} />
-        <Button
-          size="large"
-          color="primary"
-          variant="contained"
-          className={classes.button}
-        >
-          LEARN MORE
-        </Button>
       </Card>
     </div>
   );
 }
 
-export default Crowd;
+export default Support;

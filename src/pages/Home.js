@@ -57,6 +57,11 @@ const useStyles = makeStyles((theme) => {
       backgroundColor: "black",
       padding: "72px 8% 85px",
     },
+    support: {
+      borderTop: "2px solid #000000",
+      borderBottom: "2px solid #000000",
+      margin: "5em 0",
+    },
   };
 });
 
@@ -120,7 +125,7 @@ const Home = () => {
             <Piano />
           </Grid>
         </Grid>
-        <Grid container>
+        <Grid container className={classes.support}>
           <Grid item xs={6}>
             <Network />
           </Grid>
