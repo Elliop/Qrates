@@ -14,6 +14,7 @@ import Community from "../components/Community";
 import ImgsCard from "../components/ImgsCard";
 import ListCard from "../components/ListCard";
 import CommentCard from "../components/CommentCard";
+import VinlyStudio from "../components/VinlyStudio";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -148,6 +149,9 @@ const Home = () => {
         </Grid>
         <Grid item xs={12}>
           <CommentCard />
+        </Grid>
+        <Grid item xs={12}>
+          <VinlyStudio />
         </Grid>
       </Grid>
     </div>
