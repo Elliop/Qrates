@@ -1,4 +1,4 @@
-import { Typography, makeStyles, Card } from "@material-ui/core";
+import { Button, Typography, makeStyles, Card } from "@material-ui/core";
 import React from "react";
 import { useState, useEffect } from "react";
 import Sample1 from "../assets/sample_4dilla.png";
@@ -7,12 +7,14 @@ import Sample3 from "../assets/sample_black_country_disco.png";
 import Sample4 from "../assets/sample_blarney.png";
 import Sample5 from "../assets/sample_bombay.png";
 import Sample6 from "../assets/sample_female.png";
+import Sparkle from "../assets/sparkle.png";
+import Dollar from "../assets/dollar.png";
 
 const useStyles = makeStyles((theme) => {
   return {
     all: {
       backgroundColor: "#000",
-      padding: "2em",
+      padding: "5em 2em",
     },
     card: {
       backgroundColor: "#000",
@@ -44,17 +46,31 @@ const useStyles = makeStyles((theme) => {
       fontSize: "20px",
     },
     img: {
-      marginTop: "2em",
       width: "50%",
+      margin: "2em 7em"
     },
+    Sparkle: {
+        width: "18%",
+    },
+    Dollar: {
+        width: "10%",
+        float: "right"
+    },
+    button: {
+        padding: "2em 10em",
+        margin: "2em 0 0 0",
+        borderRadius: "50px",
+        backgroundColor: "#FFF804",
+        color: "black",
+        border: "1px solid #000000",
+      },
   };
 });
 
 function WhyCard() {
   const classes = useStyles();
-
   const [imgs, setImgs] = useState(`${Sample1}`);
-  let [i, setI] = useState(0);
+  const [i, setI] = useState(0);
   let tab = [
     `${Sample1}`,
     `${Sample2}`,
@@ -90,7 +106,17 @@ function WhyCard() {
           to immediately see how much your project will cost, and how much
           you’ll earn.
         </Typography>
+        <img src={Sparkle} alt="Deco" className={classes.Sparkle} />
+        <img src={Dollar} alt="Deco" className={classes.Dollar} />
         <img src={imgs} alt="Sample" className={classes.img} />
+        <Button
+          size="large"
+          variant="contained"
+          className={classes.button}
+          elevation={0}
+        >
+          TRY IT NOW
+        </Button>
       </Card>
     </div>
   );
