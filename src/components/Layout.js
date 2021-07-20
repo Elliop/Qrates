@@ -7,12 +7,12 @@ import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => {
   return {
+    root: {
+      display: "flex",
+    },
     items: {
       flexGrow: "1",
       marginLeft: "28%",
-    },
-    root: {
-      display: "flex",
     },
     appBar: {
       backgroundColor: "white",
@@ -40,7 +40,7 @@ export default function Layout({ children }) {
     <div className={classes.root}>
       {/* app bar */}
       <AppBar
-        position="fixed"
+        position="absolute"
         className={classes.appBar}
         elevation={0}
         color="primary"

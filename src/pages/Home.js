@@ -15,6 +15,7 @@ import ImgsCard from "../components/ImgsCard";
 import ListCard from "../components/ListCard";
 import CommentCard from "../components/CommentCard";
 import VinlyStudio from "../components/VinlyStudio";
+import Footer from "../components/Footer";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -152,6 +153,9 @@ const Home = () => {
         </Grid>
         <Grid item xs={12}>
           <VinlyStudio />
+        </Grid>
+        <Grid item xs={12}>
+          <Footer />
         </Grid>
       </Grid>
     </div>
