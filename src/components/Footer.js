@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => {
       backgroundColor: "black",
     },
     root: {
-      width: "100%",
       margin: "0 5%",
     },
     title: {
@@ -34,7 +33,7 @@ const useStyles = makeStyles((theme) => {
       fontSize: "20px",
     },
     part2: {
-        margin: "10em 0em 2em 0em"
+      margin: "10em 0em 2em 0em",
     },
     img: {
       width: "420px",
@@ -45,13 +44,13 @@ const useStyles = makeStyles((theme) => {
       cursor: "pointer",
     },
     footerIcon: {
-        fontSize: "20px",
-        color: "white",
-        cursor: "pointer",
+      fontSize: "20px",
+      color: "white",
+      cursor: "pointer",
     },
     test: {
-        textAlign: "left"
-    }
+      textAlign: "left",
+    },
   };
 });
 
@@ -189,28 +188,17 @@ function Piano() {
             <img src={LogoFooter} alt="man" className={classes.img} />
           </Grid>
           <Grid container xs={6}>
-
             <Grid container justifyContent="flex-end">
-
-                <IconButton className={classes.footerIcon}>
-                  <FacebookIcon />
-                </IconButton>
-
-
-                {" "}
-                <IconButton className={classes.footerIcon}>
-                  <InstagramIcon />
-                </IconButton>
-
-
-                {" "}
-                <IconButton className={classes.footerIcon}>
-                  <TwitterIcon />
-                </IconButton>
-
+              <IconButton className={classes.footerIcon}>
+                <FacebookIcon />
+              </IconButton>{" "}
+              <IconButton className={classes.footerIcon}>
+                <InstagramIcon />
+              </IconButton>{" "}
+              <IconButton className={classes.footerIcon}>
+                <TwitterIcon />
+              </IconButton>
             </Grid>
-
-
             <Grid container xs={12} className={classes.footerText}>
               <Grid item xs={3}>
                 Terms of Service
