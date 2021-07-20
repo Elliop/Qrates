@@ -1,9 +1,9 @@
 import React from "react";
 import { Button, makeStyles } from "@material-ui/core";
-import Typography from "@material-ui/core/Typography";
+import { useHistory } from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-import { useHistory } from "react-router-dom";
+import Logo from "../assets/qrates-logo.svg";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -18,12 +18,9 @@ const useStyles = makeStyles((theme) => {
       backgroundColor: "white",
     },
     logo: {
-      fontWeight: "bold",
-      fontSize: "25px",
+      width: "39px",
       cursor: "pointer",
-      padding: "6px",
-      backgroundColor: "#000",
-      borderRadius: "15px",
+      margin: "1em",
     },
     buttom: {
       margin: "0 1%",
@@ -46,12 +43,12 @@ export default function Layout({ children }) {
         color="primary"
       >
         <Toolbar>
-          <Typography
+          <img
             onClick={() => history.push("/")}
+            src={Logo}
+            alt="logo"
             className={classes.logo}
-          >
-            Q
-          </Typography>
+          />
           <div className={classes.items}>
             <Button className={classes.buttom}>DISCOVER</Button>
             <Button className={classes.buttom}>SEARCH</Button>
