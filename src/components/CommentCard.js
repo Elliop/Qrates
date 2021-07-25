@@ -30,7 +30,8 @@ const useStyles = makeStyles((theme) => {
       color: "white",
       border: "1px solid #000000",
       fontWeight: "bold",
-      marginLeft: "1em"
+      marginLeft: "1em",
+      cursor: "pointer",
     },
     button2: {
       height: "40px",
@@ -39,7 +40,8 @@ const useStyles = makeStyles((theme) => {
       backgroundColor: "transparent",
       border: "2px solid #000000",
       fontWeight: "bold",
-      marginLeft: "1em"
+      marginLeft: "1em",
+      cursor: "pointer",
     },
     divButtons: {
       position: "absolute",
@@ -51,7 +53,7 @@ const useStyles = makeStyles((theme) => {
       border: "1px solid #000000",
     },
     divImg: {
-      backgroundColor: "black"
+      backgroundColor: "black",
     },
     NO: {
       border: "2px solid #000000",
@@ -59,14 +61,13 @@ const useStyles = makeStyles((theme) => {
       backgroundColor: "white",
     },
     sol: {
-      marginTop: "1em"
+      marginTop: "1em",
     },
 
     cmp: {
       padding: "3em 9em 2em 2em",
       border: "1px solid #000000",
-      position: "relative"
-      
+      position: "relative",
     },
     Text: {
       marginTop: "11em",
@@ -76,16 +77,14 @@ const useStyles = makeStyles((theme) => {
 
 function Crowd() {
   const classes = useStyles();
-  const [card, setCard] = useState(
-    {
-      comment: `"The response was overwhelming. It made me wonder why I hadn't pressed any records on vinyl before now. It felt like something that people had been waiting for for a long time."`,
-      sign: `—SOL`,
-      img: `${Artist1}`,
-      all: `${classes.ALL}`,
-      classe1: `${classes.button1}`,
-      classe2: `${classes.button2}`,
-    }
-  )
+  const [card, setCard] = useState({
+    comment: `"The response was overwhelming. It made me wonder why I hadn't pressed any records on vinyl before now. It felt like something that people had been waiting for for a long time."`,
+    sign: `—SOL`,
+    img: `${Artist1}`,
+    all: `${classes.ALL}`,
+    classe1: `${classes.button1}`,
+    classe2: `${classes.button2}`,
+  });
 
   const handleClick1 = () => {
     setCard({
@@ -95,8 +94,8 @@ function Crowd() {
       all: `${classes.ALL}`,
       classe1: `${classes.button1}`,
       classe2: `${classes.button2}`,
-    })
-  }
+    });
+  };
   const handleClick2 = () => {
     setCard({
       comment: `“We hit our goal of 100 Records in the first 32 minutes. And I have to be honest, I didn't expect that. There's no world where I would have thought that we were about to sell north of 2800 copies.”`,
@@ -105,8 +104,8 @@ function Crowd() {
       all: `${classes.ALL2}`,
       classe1: `${classes.button2}`,
       classe2: `${classes.button1}`,
-    })
-  }
+    });
+  };
   return (
     <div className={card.all}>
       <Grid container>
@@ -115,26 +114,19 @@ function Crowd() {
             ARTISTS ON QRATES
           </Typography>
           <div className={classes.Text}>
-            <Typography variant="h5">
-              {card.comment}
+            <Typography variant="h5">{card.comment}</Typography>
+            <Typography variant="h5" className={classes.sol}>
+              {card.sign}
             </Typography>
-          <Typography variant="h5" className={classes.sol}>{card.sign}</Typography>
           </div>
           <div className={classes.divButtons}>
-          <button
-            className={`${card.classe1}`}
-            onClick={handleClick1}
-          >
-            1
-          </button>
-          <button
-            className={`${card.classe2}`}
-            onClick={handleClick2}
-          >
-            2
-          </button>            
+            <button className={`${card.classe1}`} onClick={handleClick1}>
+              1
+            </button>
+            <button className={`${card.classe2}`} onClick={handleClick2}>
+              2
+            </button>
           </div>
-
         </Grid>
         <Grid item xs={6} className={classes.divImg}>
           <img src={card.img} alt="Artist1" className={classes.img} />
