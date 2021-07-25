@@ -1,6 +1,5 @@
 import { Button, Typography, makeStyles, Card } from "@material-ui/core";
 import React from "react";
-import Watching from "../assets/watching.png";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -31,13 +30,6 @@ const useStyles = makeStyles((theme) => {
     text: {
       fontSize: "20px",
     },
-    watch: {
-      width: "14%",
-      right: "6%",
-      position: "absolute",
-      maxWidth: "200px",
-      bottom: "-275em",
-    },
   };
 });
 
@@ -67,7 +59,6 @@ function Services() {
         >
           BROWSER ARTISTS
         </Button>
-        <img src={Watching} alt="Watching" className={classes.watch} />
       </Card>
     </div>
   );

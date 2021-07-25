@@ -18,6 +18,8 @@ import VinlyStudio from "../components/VinlyStudio";
 import Footer from "../components/Footer";
 import WhiteSlider from "../components/WhiteSlider";
 import BlackSlider from "../components/BlackSlider";
+import Watching from "../assets/watching.png";
+
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -45,6 +47,16 @@ const useStyles = makeStyles((theme) => {
       borderBottom: "2px solid #000000",
       margin: "4em 0",
     },
+    watch: {
+      width: "14%",
+      right: "6%",
+      position: "absolute",
+      maxWidth: "200px",
+      bottom: "-6em",
+    },
+    container: {
+      position: "relative"
+    }
   };
 });
 
@@ -103,6 +115,9 @@ const Home = () => {
         </Grid>
         <Grid item xs={12}>
           <Community />
+          <div className={classes.container}>
+          <img src={Watching} alt="Watching" className={classes.watch} />
+        </div>
         </Grid>
         <Grid item xs={12}>
           <ImgsCard />
