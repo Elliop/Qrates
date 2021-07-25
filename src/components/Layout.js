@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => {
     },
     items: {
       flexGrow: "1",
-      marginLeft: "28%",
+      marginLeft: "20%",
     },
     appBar: {
       backgroundColor: "white",
@@ -24,6 +24,11 @@ const useStyles = makeStyles((theme) => {
     },
     buttom: {
       margin: "0 1%",
+    },
+    make: {
+      padding: "1em 3em",
+      borderRadius: "50px",
+      border: "1px solid #000000",
     },
     toolbar: theme.mixins.toolbar,
   };
@@ -56,20 +61,20 @@ export default function Layout({ children }) {
             <Button className={classes.buttom}>CART</Button>
           </div>
           <Button
-            onClick={() => history.push("/register")}
-            color="primary"
-            variant="outlined"
-          >
-            Register
-          </Button>
-          <Button
             onClick={() => history.push("/login")}
             className={classes.buttom}
             color="primary"
-            variant="contained"
           >
-            Login
+            LOG IN
+          </Button>          
+          <Button
+            color="primary"
+            variant="contained"
+            className={classes.make}
+          >
+            MAKE A RECORD
           </Button>
+
         </Toolbar>
       </AppBar>
 
