@@ -16,6 +16,7 @@ import ListCard from "../components/ListCard";
 import CommentCard from "../components/CommentCard";
 import VinlyStudio from "../components/VinlyStudio";
 import Footer from "../components/Footer";
+import WhiteSlider from "../components/WhiteSlider";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -95,12 +96,7 @@ const Home = () => {
           </Grid>
         </Grid>
         <Grid item xs={12}>
-          <Card elevation={0} className={classes.mdlCard}>
-            <Typography variant="h5" className={classes.mdlText}>
-              No matter where you’re at in your career, we’ve got a production
-              model to suit you.
-            </Typography>
-          </Card>
+<WhiteSlider />
         </Grid>
         <Grid container>
           <Grid item xs={6}>
