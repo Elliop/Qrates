@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => {
   };
 });
 
-function Services() {
+function Community() {
   const classes = useStyles();
   return (
     <div className={classes.ALL}>
@@ -64,4 +64,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Community;
