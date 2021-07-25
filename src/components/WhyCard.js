@@ -1,4 +1,4 @@
-import { Button, Typography, makeStyles, Card } from "@material-ui/core";
+import { Typography, makeStyles, Card } from "@material-ui/core";
 import React from "react";
 
 const useStyles = makeStyles((theme) => {
@@ -12,6 +12,13 @@ const useStyles = makeStyles((theme) => {
     button: {
       margin: "1em 0",
     },
+    NO: {
+      padding: "2%",      
+      border: "2px solid #000000",
+    },
+    why: {
+      margin: "1em 0 2em 0"
+    },
   };
 });
 
@@ -20,9 +27,12 @@ function WhyCard() {
   return (
     <div className={classes.card}>
       <Card elevation={0}>
-        <Button color="primary" variant="outlined" className={classes.button}>
-          WHY QRATES
-        </Button>
+        <div className={classes.why}>
+        <Typography variant="button" className={classes.NO}>
+        WHY QRATES
+        </Typography>          
+        </div>
+
         <Typography variant="h2" className={classes.typo}>
           Your music on vinyl.
         </Typography>
