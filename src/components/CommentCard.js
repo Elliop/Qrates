@@ -1,4 +1,4 @@
-import { Button, Typography, makeStyles } from "@material-ui/core";
+import { Typography, makeStyles } from "@material-ui/core";
 import React, { useState } from "react";
 import Grid from "@material-ui/core/Grid";
 import Artist1 from "../assets/artist1.jpeg";
@@ -22,15 +22,36 @@ const useStyles = makeStyles((theme) => {
       fontWeight: "bold",
       margin: "1em 0 15px 0",
     },
-    button: {
-      borderRadius: "25px",
-      marginTop: "22em",
-      marginRight: "1em"
+    button1: {
+      height: "40px",
+      width: "40px",
+      borderRadius: "50%",
+      backgroundColor: "black",
+      color: "white",
+      border: "1px solid #000000",
+      fontWeight: "bold",
+      marginLeft: "1em"
+    },
+    button2: {
+      height: "40px",
+      width: "40px",
+      borderRadius: "50%",
+      backgroundColor: "transparent",
+      border: "2px solid #000000",
+      fontWeight: "bold",
+      marginLeft: "1em"
+    },
+    divButtons: {
+      position: "absolute",
+      bottom: "3em",
     },
     img: {
       width: "100%",
+      height: "875px",
       border: "1px solid #000000",
-      height: "100%"
+    },
+    divImg: {
+      backgroundColor: "black"
     },
     NO: {
       border: "2px solid #000000",
@@ -40,14 +61,16 @@ const useStyles = makeStyles((theme) => {
     sol: {
       marginTop: "1em"
     },
-    comnt: {
-      marginTop: "11em"
-    },
+
     cmp: {
       padding: "3em 9em 2em 2em",
       border: "1px solid #000000",
+      position: "relative"
       
-    }
+    },
+    Text: {
+      marginTop: "11em",
+    },
   };
 });
 
@@ -58,7 +81,9 @@ function Crowd() {
       comment: `"The response was overwhelming. It made me wonder why I hadn't pressed any records on vinyl before now. It felt like something that people had been waiting for for a long time."`,
       sign: `—SOL`,
       img: `${Artist1}`,
-      all: `${classes.ALL}`
+      all: `${classes.ALL}`,
+      classe1: `${classes.button1}`,
+      classe2: `${classes.button2}`,
     }
   )
 
@@ -67,7 +92,9 @@ function Crowd() {
       comment: `"The response was overwhelming. It made me wonder why I hadn't pressed any records on vinyl before now. It felt like something that people had been waiting for for a long time."`,
       sign: `—SOL`,
       img: `${Artist1}`,
-      all: `${classes.ALL}`
+      all: `${classes.ALL}`,
+      classe1: `${classes.button1}`,
+      classe2: `${classes.button2}`,
     })
   }
   const handleClick2 = () => {
@@ -75,7 +102,9 @@ function Crowd() {
       comment: `“We hit our goal of 100 Records in the first 32 minutes. And I have to be honest, I didn't expect that. There's no world where I would have thought that we were about to sell north of 2800 copies.”`,
       sign: `—Mason Lieberman (The Real Folk Blues, 2020)`,
       img: `${Artist2}`,
-      all: `${classes.ALL2}`
+      all: `${classes.ALL2}`,
+      classe1: `${classes.button2}`,
+      classe2: `${classes.button1}`,
     })
   }
   return (
@@ -85,30 +114,29 @@ function Crowd() {
           <Typography variant="button" className={classes.NO}>
             ARTISTS ON QRATES
           </Typography>
-          <Typography variant="h5" className={classes.comnt}>
-            {card.comment}
-          </Typography>
+          <div className={classes.Text}>
+            <Typography variant="h5">
+              {card.comment}
+            </Typography>
           <Typography variant="h5" className={classes.sol}>{card.sign}</Typography>
-          <Button
-            disableElevation
-            variant="contained"
-            color="primary"
-            className={classes.button}
+          </div>
+          <div className={classes.divButtons}>
+          <button
+            className={`${card.classe1}`}
             onClick={handleClick1}
           >
             1
-          </Button>
-          <Button
-            disableElevation
-            variant="contained"
-            color="primary"
-            className={classes.button}
+          </button>
+          <button
+            className={`${card.classe2}`}
             onClick={handleClick2}
           >
             2
-          </Button>
+          </button>            
+          </div>
+
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={6} className={classes.divImg}>
           <img src={card.img} alt="Artist1" className={classes.img} />
         </Grid>
       </Grid>

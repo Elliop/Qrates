@@ -80,7 +80,7 @@ function WhyCard() {
     `${Sample6}`,
   ];
   useEffect(() => {
-    if (i == 6) {
+    if (i === 6) {
       setI(0);
     }
     const timer = setTimeout(() => setI(i + 1), 1000);
