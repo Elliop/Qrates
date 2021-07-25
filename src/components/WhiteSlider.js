@@ -21,8 +21,8 @@ function WhiteSlider() {
   return (
     <Card elevation={0} className={classes.mdlCard}>
       <Typography variant="h5" className={classes.mdlText}>
-        No matter where you’re at in your career, we’ve got a production
-        model to suit you.
+        No matter where you’re at in your career, we’ve got a production model
+        to suit you.
       </Typography>
     </Card>
   );

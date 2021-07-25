@@ -1,4 +1,4 @@
-import { Card, makeStyles, Typography } from "@material-ui/core";
+import { makeStyles, Typography } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import WhyCard from "../components/WhyCard";
 import Man from "../assets/man.png";
@@ -17,6 +17,7 @@ import CommentCard from "../components/CommentCard";
 import VinlyStudio from "../components/VinlyStudio";
 import Footer from "../components/Footer";
 import WhiteSlider from "../components/WhiteSlider";
+import BlackSlider from "../components/BlackSlider";
 
 const useStyles = makeStyles((theme) => {
   return {
@@ -38,31 +39,6 @@ const useStyles = makeStyles((theme) => {
     paid: {
       width: "60%",
       margin: "15% 20% 0 0",
-    },
-    mdlCard: {
-      width: "100%",
-      borderTop: "2px solid #000000",
-      borderBottom: "2px solid #000000",
-      borderRadius: "0px",
-    },
-    mdlText: {
-      padding: "110px 0 97px",
-      textAlign: "center",
-    },
-    text1: {
-      fontSize: "20px",
-    },
-    text2: {
-      paddingTop: "10px",
-      fontSize: "16px",
-      margin: "0 0 0 15%",
-      cursor: "pointer",
-      textDecoration: "underline",
-    },
-    cont: {
-      color: "white",
-      backgroundColor: "black",
-      padding: "72px 8% 85px",
     },
     support: {
       borderTop: "2px solid #000000",
@@ -96,7 +72,7 @@ const Home = () => {
           </Grid>
         </Grid>
         <Grid item xs={12}>
-<WhiteSlider />
+          <WhiteSlider />
         </Grid>
         <Grid container>
           <Grid item xs={6}>
@@ -106,18 +82,8 @@ const Home = () => {
             <PressSell />
           </Grid>
         </Grid>
-        <Grid container className={classes.cont}>
-          <Grid item xs={8}>
-            <Typography variant="h5" className={classes.text1}>
-              Just after straight up vinyl pressing? We do that too. Records are
-              shipped in bulk to wherever you need.
-            </Typography>
-          </Grid>
-          <Grid item xs={4}>
-            <Typography className={classes.text2} variant="h5">
-              START A PRESS ONLY PROJECT
-            </Typography>
-          </Grid>
+        <Grid container>
+          <BlackSlider />
         </Grid>
         <Grid container>
           <Grid item xs={6}>
