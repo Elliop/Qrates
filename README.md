@@ -27,7 +27,7 @@
 <h1>Bonus</h1>
 <h3>Login Page</h3>
 
-![Login 1](https://github.com/Elliop/Qrates/blob/main/public/Img/QRATES_11.png?raw=true)
+![Login 1](https://github.com/Elliop/Qrates/blob/main/public/Img/QRATES_10.png?raw=true)
 <h3>Register Page</h3>
 
-![Register 1](https://github.com/Elliop/Qrates/blob/main/public/Img/QRATES_12.png?raw=true)
+![Register 1](https://github.com/Elliop/Qrates/blob/main/public/Img/QRATES_11.png?raw=true)
