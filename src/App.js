@@ -3,6 +3,7 @@ import { createMuiTheme, ThemeProvider } from "@material-ui/core";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 const theme = createMuiTheme({
   palette: {
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/register">
+              <Register />
             </Route>
           </Switch>
         </Layout>
