@@ -32,7 +32,7 @@ const Home = () => {
           <Grid container>
             <CardContent>
             <Typography variant="h2" className={classes.title}>
-            Log in
+            Create an account
         </Typography>
             </CardContent>
           </Grid>
