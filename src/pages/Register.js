@@ -8,6 +8,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import GrainIcon from "@material-ui/icons/Grain";
 import TextField from "@material-ui/core/TextField";
+import Checkbox from '@material-ui/core/Checkbox';
 import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => {
@@ -78,6 +79,20 @@ const useStyles = makeStyles((theme) => {
       color: "white",
       fontWeight: "bold",
       width: "100%",
+    },
+    privacy: {
+      backgroundColor: "#EEEEEC",
+      margin: "1em 6em 1em 3em",
+      padding: "1em",
+      width : "100%",
+    },
+    privacyText: {
+      padding: "1em 0",
+    },
+    privacySpan: {
+      fontWeight: "bold",
+      textDecoration: "underline",
+      cursor: "pointer"
     },
   };
 });
@@ -167,6 +182,15 @@ const Home = () => {
               punctuation marks for security, and must be more than 6 characters
               in length. *Required information
             </Typography>
+            <Card className={classes.privacy}>
+              <Grid container>
+              <Checkbox  color="default" />
+              <Typography className={classes.privacyText}>
+              I have read and agreed to the Qrates <span className={classes.privacySpan}>terms and conditions</span> and <span className={classes.privacySpan}>privacy policy</span>.
+              </Typography>                
+              </Grid>
+
+            </Card>            
             <Button
               size="large"
               variant="contained"
@@ -175,6 +199,7 @@ const Home = () => {
             >
               CREATE ACCOUNT
             </Button>
+
           </Grid>
         </Card>
         <Grid item xs={12}>
