@@ -72,7 +72,7 @@ const useStyles = makeStyles((theme) => {
       fontWeight: "bold",
       cursor: "pointer",
       textDecoration: "underline",
-    }, 
+    },
     button: {
       padding: "1em",
       margin: "1em 4em 2em 2em",
@@ -80,7 +80,7 @@ const useStyles = makeStyles((theme) => {
       backgroundColor: "#000",
       color: "white",
       fontWeight: "bold",
-      width: "100%"
+      width: "100%",
     },
   };
 });
@@ -101,7 +101,11 @@ const Home = () => {
                 New to Qrates?
               </Typography>
 
-              <Typography variant="h2" className={classes.Create} onClick={() => history.push("/register")}>
+              <Typography
+                variant="h2"
+                className={classes.Create}
+                onClick={() => history.push("/register")}
+              >
                 Create an account
               </Typography>
             </Grid>
@@ -146,16 +150,16 @@ const Home = () => {
               </Grid>
             </Grid>
             <Typography className={classes.forget}>
-            I FORGOT MY PASSWORD
-                </Typography>
-                <Button
-          size="large"
-          variant="contained"
-          className={classes.button}
-          elevation={0}
-        >
-          Log In
-        </Button>
+              I FORGOT MY PASSWORD
+            </Typography>
+            <Button
+              size="large"
+              variant="contained"
+              className={classes.button}
+              elevation={0}
+            >
+              Log In
+            </Button>
           </Grid>
         </Card>
         <Grid item xs={12}>
