@@ -22,4 +22,12 @@
 ![WebSite 6](https://github.com/Elliop/Qrates/blob/main/public/Img/QRATES_6.png?raw=true)
 ![WebSite 7](https://github.com/Elliop/Qrates/blob/main/public/Img/QRATES_7.png?raw=true)
 ![WebSite 8](https://github.com/Elliop/Qrates/blob/main/public/Img/QRATES_8.png?raw=true)
-![Footer](https://github.com/Elliop/Qrates/blob/main/public/Img/QRATES_9.png?raw=true)
+![Footer 1](https://github.com/Elliop/Qrates/blob/main/public/Img/QRATES_9.png?raw=true)
+
+<h1>Bonus</h1>
+<h3>Login Page</h3>
+
+![Login 1](https://github.com/Elliop/Qrates/blob/main/public/Img/QRATES_11.png?raw=true)
+<h3>Register Page</h3>
+
+![Register 1](https://github.com/Elliop/Qrates/blob/main/public/Img/QRATES_12.png?raw=true)
